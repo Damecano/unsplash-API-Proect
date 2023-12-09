@@ -1,12 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const gallarySection = document.getElementById("gallary");
 
-    //unsplash access Key!
-    const accessKey = 'YOUR_ACCESS_KEY';
+    //     //unsplash access Key!
+    const accessKey = 'GkvqPWKsm0yK8yggOM5Fu2TN4Y32vUv1f1UNeUVleig';
 
-   //https://api.unsplash.com
-
-   fetch(`https://api.unsplash.com/photos/random?count=20&client_id=${accessKey}`)
+    //https://api.unsplash.com
+    fetch(`https://api.unsplash.com/photos/random?count=15&client_id=${accessKey}`)
         .then(response => response.json())
         .then(data => {
             data.forEach(photo => {
@@ -18,3 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .catch(error => console.error("Error rasmlar yuklanmadi!!!", error));
 })
+
+
+function reloadPage() {
+    location.reload()
+}

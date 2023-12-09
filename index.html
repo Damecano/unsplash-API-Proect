@@ -1,20 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1>Unsplash Photo Gallary</h1>
+        <span class="brand">
+            <svg class="UP8CN" width="32" height="32" viewBox="0 0 32 32" version="1.1" aria-labelledby="unsplash-home"
+                aria-hidden="false">
+                <desc lang="en-US">Unsplash logo</desc>
+                <title id="unsplash-home">Unsplash Home</title>
+                <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+            </svg>
+            <p>Unsplash</p>
+        </span>
+        <input type="text" placeholder="Search..." class="search_inp">
+        <button class="menu_btn" onclick="open_menu()">
+            <img src="menus.png" alt="MENU" class="menu_icon">
+        </button>
+        <div class="menu">
+            <ul>
+                <li><a href="#">All Categories</a></li>
+                <li><a href="#">Neture</a></li>
+                <li><a href="#">Space</a></li>
+                <li><a href="#">Wallpaper</a></li>
+                <li><a href="#">Cars</a></li>
+            </ul>
+        </div>
+        <div class="menu_drop">
+            <ul>
+                <li><a href="#">All Categories</a></li>
+                <li><a href="#">Neture</a></li>
+                <li><a href="#">Space</a></li>
+                <li><a href="#">Wallpaper</a></li>
+                <li><a href="#">Cars</a></li>
+            </ul>
+        </div>
     </header>
+
 
     <main id="gallary">
 
     </main>
-    
+    <button class="reload_btn" onclick="reloadPage()">
+        <span>More Pictures...</span>
+    </button>
 </body>
 <script src="script.js"></script>
+<script src="mobile.js"></script>
+
 </html>
